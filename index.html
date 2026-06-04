@@ -1,57 +1,99 @@
-ZenisApps · zenislab.com
-
-Política de Privacidad
-Última actualización: junio 2025  ·  Aplicable a todas las apps de ZenisApps
-
-1. Introducción
-Esta Política de Privacidad describe cómo ZenisApps (operado por ZenisLab, zenislab.com) gestiona la información en todas sus aplicaciones móviles disponibles en Google Play Store.
-
-Al descargar o usar cualquiera de nuestras aplicaciones, aceptas los términos descritos en esta política. Si no estás de acuerdo, te pedimos que no utilices nuestras apps.
-
-2. Datos que NO recopilamos
-Nuestras aplicaciones no recopilan, almacenan ni transmiten datos personales de ningún tipo. En particular, no recopilamos:
-
-Nombre, correo electrónico ni información de contacto
-Ubicación geográfica
-Número de teléfono u otros identificadores personales
-Datos de salud o biométricos
-Historial de navegación externo a la app
-Credenciales de otras cuentas
-3. Almacenamiento local (AsyncStorage)
-Algunas apps utilizan AsyncStorage de React Native para guardar preferencias del usuario (como configuraciones, historial de cálculos o modo visual) exclusivamente en el dispositivo local. Estos datos:
-
-Nunca se envían a servidores externos
-No son accesibles para ZenisApps ni para terceros
-Pueden eliminarse en cualquier momento desinstalando la app o borrando los datos desde la configuración del dispositivo
-4. Publicidad — Google AdMob
-Algunas de nuestras apps muestran anuncios a través de Google AdMob, un servicio de publicidad operado por Google LLC. AdMob puede recopilar ciertos datos del dispositivo con el fin de mostrar anuncios relevantes, lo cual está sujeto a la Política de Privacidad de Google.
-
-La información que AdMob puede recopilar incluye, entre otros:
-
-Identificador de publicidad del dispositivo (GAID)
-Datos de interacción con los anuncios
-Información técnica del dispositivo (modelo, versión de SO)
-ZenisApps no accede ni controla la información recopilada por AdMob. Para más detalles o para gestionar tus preferencias de publicidad, consulta los ajustes de privacidad de tu dispositivo Android o visita adssettings.google.com.
-
-5. Permisos del dispositivo
-Nuestras apps solicitan únicamente los permisos estrictamente necesarios para su funcionamiento. Ningún permiso es utilizado para recopilar datos personales. Los permisos varían según la app y se detallan en su respectiva ficha de Google Play Store.
-
-6. Aplicaciones cubiertas por esta política
-Esta política aplica a todas las aplicaciones publicadas por ZenisApps, incluyendo:
-
-Calculadora de Subredes
-Conversor de Unidades Técnicas
-Proyecto Ámbar
-Calculadora de Consumo Eléctrico
-Cualquier futura aplicación publicada bajo el nombre de ZenisApps o ZenisLab
-7. Menores de edad
-Nuestras aplicaciones no están dirigidas a menores de 13 años. No recopilamos intencionalmente información de menores. Si eres padre o tutor y crees que tu hijo ha proporcionado información personal a través de nuestras apps, contáctanos para tomar las medidas correspondientes.
-
-8. Cambios a esta política
-Podemos actualizar esta Política de Privacidad en cualquier momento. Los cambios entrarán en vigor al publicarse en esta página. Te recomendamos revisarla periódicamente. El uso continuado de nuestras apps después de cualquier cambio implica tu aceptación de la política actualizada.
-
-9. Contacto
-Para consultas relacionadas con esta política de privacidad, puedes contactarnos a través del formulario en zenislab.com o escribirnos a contacto@zenislab.com.
-
-© 2025 ZenisApps · ZenisLab
-zenislab.com
+minos de uso · HTML
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos de Uso — ZenisApps</title>
+  <style>
+    :root {
+      --bg:      #0B0F14;
+      --surface: #0F172A;
+      --border:  #1E293B;
+      --accent:  #38BDF8;
+      --text:    #F8FAFC;
+      --muted:   #94A3B8;
+      --mono:    'Courier New', Courier, monospace;
+      --sans:    -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: var(--sans); font-weight: 300; line-height: 1.75; padding: 2rem 1.25rem 4rem; }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+    .brand { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; margin-bottom: 0.75rem; }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 600; line-height: 1.2; color: var(--text); }
+    .meta { margin-top: 0.75rem; font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+    section { margin-bottom: 2.25rem; }
+    h2 { font-size: 0.7rem; font-family: var(--mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; padding-left: 0.85rem; border-left: 2px solid var(--accent); }
+    p { color: var(--muted); margin-bottom: 0.85rem; font-size: 0.95rem; }
+    p strong { color: var(--text); font-weight: 600; }
+    ul { list-style: none; padding: 0; margin-bottom: 0.85rem; }
+    ul li { color: var(--muted); font-size: 0.95rem; padding: 0.3rem 0 0.3rem 1.4rem; position: relative; }
+    ul li::before { content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 600; }
+    a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+    a:hover { border-color: var(--accent); }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 1.25rem 1.5rem; margin-top: 0.5rem; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); font-family: var(--mono); font-size: 0.7rem; color: var(--muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="brand">ZenisApps · zenislab.com</p>
+    <h1>Términos de Uso</h1>
+    <p class="meta">Última actualización: junio 2025 &nbsp;·&nbsp; Aplicable a todas las apps de ZenisApps</p>
+  </header>
+  <section>
+    <h2>1. Aceptación de los términos</h2>
+    <p>Al descargar, instalar o utilizar cualquier aplicación de <strong>ZenisApps</strong> (operado por ZenisLab), aceptas quedar sujeto a estos Términos de Uso.</p>
+  </section>
+  <section>
+    <h2>2. Licencia de uso</h2>
+    <p>ZenisApps te concede una licencia <strong>personal, no exclusiva, no transferible y revocable</strong> para usar nuestras aplicaciones en dispositivos Android de tu propiedad, únicamente con fines personales y no comerciales.</p>
+    <p>Queda expresamente prohibido:</p>
+    <ul>
+      <li>Copiar, modificar, distribuir o vender la aplicación o cualquier parte de ella</li>
+      <li>Realizar ingeniería inversa o intentar extraer el código fuente</li>
+      <li>Usar la app con fines ilegales o no autorizados</li>
+      <li>Sublicenciar o transferir los derechos de uso a terceros</li>
+    </ul>
+  </section>
+  <section>
+    <h2>3. Precisión de los resultados</h2>
+    <p>Nuestras aplicaciones son herramientas de apoyo técnico. Si bien nos esforzamos por ofrecer resultados precisos, <strong>ZenisApps no garantiza la exactitud</strong> de los resultados para ningún propósito específico.</p>
+    <p>El usuario es responsable de verificar los resultados antes de aplicarlos en entornos productivos, académicos o críticos.</p>
+  </section>
+  <section>
+    <h2>4. Publicidad</h2>
+    <p>Algunas apps incluyen publicidad a través de <strong>Google AdMob</strong>. Al usar la app, aceptas la visualización de anuncios en los espacios designados.</p>
+  </section>
+  <section>
+    <h2>5. Disponibilidad del servicio</h2>
+    <p>ZenisApps se reserva el derecho de modificar, suspender o descontinuar cualquier aplicación en cualquier momento y sin previo aviso.</p>
+  </section>
+  <section>
+    <h2>6. Propiedad intelectual</h2>
+    <p>Todos los derechos sobre las aplicaciones son propiedad exclusiva de <strong>ZenisLab</strong>. Queda prohibida su reproducción total o parcial sin autorización expresa por escrito.</p>
+  </section>
+  <section>
+    <h2>7. Limitación de responsabilidad</h2>
+    <p>En la máxima medida permitida por la ley, ZenisApps no será responsable por daños derivados del uso o imposibilidad de uso de nuestras aplicaciones.</p>
+  </section>
+  <section>
+    <h2>8. Modificaciones</h2>
+    <p>Nos reservamos el derecho de actualizar estos términos en cualquier momento. El uso continuado de las apps implica aceptación de los nuevos términos.</p>
+  </section>
+  <section>
+    <h2>9. Contacto</h2>
+    <div class="card">
+      <p style="margin:0;">Contáctanos en <a href="https://zenislab.com">zenislab.com</a> o a <a href="mailto:contacto@zenislab.com">contacto@zenislab.com</a>.</p>
+    </div>
+  </section>
+  <footer>
+    <span>© 2025 ZenisApps · ZenisLab</span>
+    <span>zenislab.com</span>
+  </footer>
+</div>
+</body>
+</html>
+ 
