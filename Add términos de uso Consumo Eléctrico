@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos de Uso — Consumo Eléctrico</title>
+  <style>
+    :root {
+      --bg:      #0B0F14;
+      --bg2:     #0F172A;
+      --surface: #1E293B;
+      --accent:  #38BDF8;
+      --text:    #F8FAFC;
+      --muted:   #94A3B8;
+      --border:  #1E293B;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 0 80px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    .app-name {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    /* Metadata */
+    .meta {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .meta-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .meta-value {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: var(--accent);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Info box */
+    .info-box {
+      background: color-mix(in srgb, var(--accent) 10%, var(--bg2));
+      border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .info-box p {
+      margin: 0;
+      color: color-mix(in srgb, var(--accent) 80%, var(--text));
+      font-size: 14px;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-brand {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .footer-meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg:      #F8FAFC;
+        --bg2:     #F1F5F9;
+        --surface: #E2E8F0;
+        --text:    #1E293B;
+        --muted:   #475569;
+        --border:  #E2E8F0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 22px; }
+      h2 { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="header-icon">⚡</div>
+      <div>
+        <h1>Términos de Uso</h1>
+        <div class="app-name">Consumo Eléctrico · ZenisLab</div>
+      </div>
+    </div>
+
+    <!-- Metadata -->
+    <div class="meta">
+      <div class="meta-item">
+        <span class="meta-label">Última actualización</span>
+        <span class="meta-value">Junio 2026</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Versión de la app</span>
+        <span class="meta-value">1.0.0 y posteriores</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Plataforma</span>
+        <span class="meta-value">Android</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Desarrollador</span>
+        <span class="meta-value">ZenisLab</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <p>
+        Al descargar, instalar o utilizar <strong>Consumo Eléctrico</strong>, aceptas los presentes Términos de Uso en su totalidad. Si no estás de acuerdo con alguna cláusula, te pedimos que no utilices la aplicación.
+      </p>
+    </div>
+
+    <!-- 1. Descripción del servicio -->
+    <div class="section">
+      <h2>1. Descripción del servicio</h2>
+      <p>
+        <strong>Consumo Eléctrico</strong> es una aplicación móvil gratuita para Android, desarrollada por <strong>ZenisLab</strong>, que permite a los usuarios calcular el consumo eléctrico estimado de sus aparatos, visualizar costos aproximados según una tarifa configurable y organizar proyectos de instalación eléctrica.
+      </p>
+      <p>
+        La aplicación está diseñada como herramienta de referencia y estimación. Los resultados que proporciona son <strong>aproximados</strong> y no constituyen una medición eléctrica técnica ni certificada.
+      </p>
+    </div>
+
+    <!-- 2. Uso aceptable -->
+    <div class="section">
+      <h2>2. Uso aceptable</h2>
+      <p>Al utilizar esta aplicación, el usuario se compromete a:</p>
+      <ul>
+        <li>Utilizarla únicamente para fines personales, domésticos o profesionales lícitos.</li>
+        <li>No intentar descompilar, desensamblar, modificar o realizar ingeniería inversa sobre la aplicación.</li>
+        <li>No utilizar la aplicación con fines fraudulentos, ilegales o que puedan causar daño a terceros.</li>
+        <li>No reproducir, distribuir ni comercializar la aplicación o cualquiera de sus componentes sin autorización expresa de ZenisLab.</li>
+        <li>Mantener actualizada la aplicación para beneficiarse de las correcciones de seguridad y mejoras funcionales.</li>
+      </ul>
+      <p>
+        ZenisLab se reserva el derecho de revocar el acceso a la aplicación a cualquier usuario que incumpla estas condiciones.
+      </p>
+    </div>
+
+    <!-- 3. Datos almacenados localmente -->
+    <div class="section">
+      <h2>3. Datos almacenados localmente</h2>
+      <p>
+        <strong>Consumo Eléctrico no recopila ni transmite datos personales a servidores externos.</strong> Toda la información introducida por el usuario (aparatos, proyectos, historial, configuración) se almacena exclusivamente en el dispositivo del usuario mediante el mecanismo de almacenamiento local (<em>AsyncStorage</em>) de Android.
+      </p>
+      <ul>
+        <li><strong>Lista de aparatos:</strong> guardada localmente, no se sincroniza con ningún servidor.</li>
+        <li><strong>Proyectos guardados:</strong> almacenados en el dispositivo, no se comparten automáticamente.</li>
+        <li><strong>Historial de aparatos:</strong> almacenado localmente con el límite configurado por el usuario.</li>
+        <li><strong>Configuración (tarifa, moneda, tema):</strong> guardada localmente en el dispositivo.</li>
+      </ul>
+      <p>
+        Al desinstalar la aplicación, todos los datos locales se eliminan permanentemente del dispositivo. ZenisLab no tiene acceso ni posibilidad de recuperar esos datos.
+      </p>
+      <p>
+        Para más información sobre el tratamiento de datos, consulta nuestra
+        <a href="https://zenisleft5041.github.io/privacy-policy/">Política de Privacidad</a>.
+      </p>
+    </div>
+
+    <!-- 4. Publicidad (AdMob) -->
+    <div class="section">
+      <h2>4. Publicidad de terceros (Google AdMob)</h2>
+      <p>
+        La aplicación incluye publicidad suministrada por <strong>Google AdMob</strong>, un servicio de Google LLC. La publicidad puede aparecer como banners y anuncios intersticiales durante el uso de la aplicación.
+      </p>
+      <p>
+        Al utilizar esta aplicación, el usuario reconoce y acepta que:
+      </p>
+      <ul>
+        <li>Google AdMob puede recopilar datos del dispositivo para mostrar anuncios relevantes, conforme a la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.</li>
+        <li>ZenisLab no controla el contenido específico de los anuncios mostrados por AdMob.</li>
+        <li>El usuario puede gestionar sus preferencias de personalización de anuncios en la configuración de su cuenta de Google.</li>
+        <li>Los datos recopilados por AdMob están sujetos a las políticas de privacidad de Google LLC, no a las de ZenisLab.</li>
+      </ul>
+      <div class="info-box">
+        <p>
+          La publicidad financia el desarrollo y mantenimiento gratuito de esta aplicación. ZenisLab no comparte datos personales adicionales con Google AdMob más allá de lo técnicamente necesario para el funcionamiento del SDK.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5. Limitación de responsabilidad -->
+    <div class="section">
+      <h2>5. Limitación de responsabilidad</h2>
+      <p>
+        <strong>Consumo Eléctrico</strong> proporciona estimaciones de consumo eléctrico con fines informativos y orientativos. ZenisLab no garantiza la exactitud, completitud ni idoneidad de los cálculos para ningún uso específico.
+      </p>
+      <p>
+        ZenisLab <strong>no será responsable</strong> en ningún caso de:
+      </p>
+      <ul>
+        <li>Pérdidas económicas derivadas de decisiones tomadas con base en los cálculos de la aplicación.</li>
+        <li>Diferencias entre el consumo estimado por la aplicación y el consumo real facturado por la compañía eléctrica.</li>
+        <li>Daños directos, indirectos, incidentales, especiales o consecuentes derivados del uso o imposibilidad de uso de la aplicación.</li>
+        <li>Pérdida de datos almacenados localmente por fallos del dispositivo, desinstalación o actualizaciones del sistema operativo.</li>
+        <li>Interrupciones del servicio o errores en la aplicación causados por actualizaciones del sistema operativo Android.</li>
+      </ul>
+      <p>
+        La aplicación se proporciona <strong>"tal cual"</strong> (<em>as is</em>) sin garantías de ningún tipo, expresas o implícitas, incluyendo sin limitación las garantías de comerciabilidad, idoneidad para un propósito particular y no infracción.
+      </p>
+    </div>
+
+    <!-- 6. Propiedad intelectual -->
+    <div class="section">
+      <h2>6. Propiedad intelectual</h2>
+      <p>
+        Todos los derechos de propiedad intelectual sobre la aplicación <strong>Consumo Eléctrico</strong> —incluyendo el código fuente, diseño, logotipos, iconos, textos e interfaces— pertenecen exclusivamente a <strong>ZenisLab</strong>.
+      </p>
+      <p>
+        Queda expresamente prohibida la reproducción, distribución, comunicación pública o transformación de cualquier elemento de la aplicación sin autorización escrita previa de ZenisLab.
+      </p>
+    </div>
+
+    <!-- 7. Modificaciones -->
+    <div class="section">
+      <h2>7. Modificaciones de los términos</h2>
+      <p>
+        ZenisLab se reserva el derecho de modificar estos Términos de Uso en cualquier momento. Los cambios se notificarán a través de actualizaciones en Google Play Store o mediante aviso en la aplicación. El uso continuado de la aplicación tras la publicación de cambios implica la aceptación de los nuevos términos.
+      </p>
+      <p>
+        Se recomienda revisar periódicamente esta página para mantenerse informado sobre posibles actualizaciones.
+      </p>
+    </div>
+
+    <!-- 8. Disponibilidad -->
+    <div class="section">
+      <h2>8. Disponibilidad del servicio</h2>
+      <p>
+        ZenisLab no garantiza la disponibilidad ininterrumpida de la aplicación. Nos reservamos el derecho de modificar, suspender o discontinuar la aplicación en cualquier momento, con o sin previo aviso, sin que ello genere responsabilidad alguna frente al usuario.
+      </p>
+    </div>
+
+    <!-- 9. Legislación aplicable -->
+    <div class="section">
+      <h2>9. Legislación aplicable</h2>
+      <p>
+        Estos Términos de Uso se rigen por la legislación aplicable en el lugar de residencia del usuario. Para cualquier disputa no resuelta amigablemente, las partes se someten a los tribunales competentes según la normativa local aplicable.
+      </p>
+    </div>
+
+    <!-- 10. Contacto -->
+    <div class="section">
+      <h2>10. Contacto</h2>
+      <p>
+        Si tienes preguntas o comentarios sobre estos Términos de Uso, puedes contactarnos en:
+      </p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:contacto@zenislab.com">contacto@zenislab.com</a></li>
+        <li><strong>Web:</strong> <a href="https://zenislab.com" target="_blank" rel="noopener">zenislab.com</a></li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-brand">ZenisLab</div>
+      <div class="footer-meta">
+        Consumo Eléctrico · v1.0.0 · Android<br />
+        <a href="https://zenisleft5041.github.io/privacy-policy/">Política de Privacidad</a>
+        &nbsp;·&nbsp;
+        <a href="https://zenislab.com">zenislab.com</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
